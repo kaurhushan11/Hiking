@@ -1,38 +1,184 @@
-.App {
-  text-align: center;
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    padding-top: 110px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+@font-face {
+    font-family: Nunito-VariableFont_wght;
+    src: url(./Fonts/Nunito-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: Bitter-VariableFont_wght;
+    src: url(./Fonts/Bitter-VariableFont_wght.ttf);
+}
+@font-face {
+    font-family: PermanentMarker-Regular;
+    src: url(./Fonts/PermanentMarker-Regular.ttf);
+}
+.nav-head{
+    font-family: Nunito-VariableFont_wght;
+}
+.home-img, .foot-sec, .class-event, .classes, .event-class, .h5-promo, .p-promo, .btn-promo, .btn-promo2, .online-col2, .places-online, .h3-online, .p-online, .contact-head, .contact-div, .signin-head, .sign-div, .signup-head, .signup-div, .team, .ethic{
+    font-family: Bitter-VariableFont_wght;
+}
+.h1-promo, .h3-promo, .online-col1, .h1-online{
+    font-family: PermanentMarker-Regular;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.home-img{
+    position: relative;
+}
+.head-text1{
+    position: absolute;
+    top: 20%;
+    /* left: 5%; */
+}
+.head-text2{
+    position: absolute;
+    top: 40%;
+}
+.head-text3{
+    position: absolute;
+    top: 52%;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+.foot-img{
+    height: 20px;
+    background-color: #0cc4df
 }
 
-.App-link {
-  color: #61dafb;
+@media (max-width: 780px){
+    .head-text1{
+        position: absolute;
+        top: 30%;
+        font-size: 20px;
+        line-height: 20px;
+    }
+    .head-text2{
+        position: absolute;
+        top: 49%;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .head-text3{
+        position: absolute;
+        top: 62%;
+        font-size: 10px;
+        line-height: 12px;
+    }
+    .head-bg{
+        background-color: black;
+    }
+    .h1-promo{
+        font-size: 2vw;
+    }
+    .h5-promo{
+        font-size: 1.5vw;
+    }
+    .p-promo{
+        margin-bottom: -2px;
+        font-size: 1vw;
+    }
+    .btn-promo{
+        font-size: 1vw;
+    }
+    .h3-promo{
+        margin-bottom: -8px;
+        font-size: 2vw;
+    }
+    .img-promo2{
+        width: 12%;
+    }
+    .btn-promo2{
+        font-size: 1vw;
+    }
+    .h1-online{
+        font-size: 3vw;
+        margin-top: -18px;
+    }
+    .h3-online{
+        font-size: 2vw;
+        margin-top: -12px;
+    }
+    .p-online{
+        font-size: 1.5vw;
+        margin-top: -16px;
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.half-foot{
+    display: flex;
+    flex-direction: row;
+}
+.class-price{
+    display: flex;
+    flex-direction: row;
+}
+.class-event{
+    letter-spacing: 2px;
+    line-height: 30px;
+}
+.cl-pr1{
+    line-height: 28px;
+}
+.cl-pr2{
+    line-height: 35px;
+}
+.p2_div3{
+    color: #fd5f00;
+    font-family: PermanentMarker-Regular;
+    letter-spacing: 2px;
+}
+.mount_div5{
+    display: flex;
+    flex-direction: row;
+}
+.act_div5{
+    display: flex;
+    flex-direction: row;
+}
+.hike_div5{
+    display: flex;
+    flex-direction: row;
+}
+.h5_div5{
+    color: #0cc4df;
+    font-family: PermanentMarker-Regular;
+    letter-spacing: 2px;
+}
+.event-class{
+    line-height: 30px;
+    letter-spacing: 1px;
+}
+.promo-img{
+    filter:brightness(0.4);
+}
+.h1-online{
+    color: #fd5f00;
+}
+.online-div1{
+    position: relative;
+}
+.inner-div1{
+    position: absolute;
+}
+.h5-online{
+    color: #0cc4df;
+}
+.online-price{
+    display: flex;
+    flex-direction: row;
+}
+.img-online-col2{
+    background-color: #0cc4df;
+}
+.online-price1{
+    line-height: 25px;
+}
+.online-price2{
+    line-height: 30px;
 }
